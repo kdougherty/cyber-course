@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Interactive Cybersecurity Learning Module - Learn essential cybersecurity practices to protect yourself and your organization from digital threats." />
+    <meta name="keywords" content="cybersecurity, security training, cyber hygiene, phishing, social engineering, malware" />
+    <meta name="author" content="Cybersecurity Learning Platform" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Cybersecurity Learning Module" />
+    <meta property="og:description" content="Interactive cybersecurity training covering threats, hygiene, and social engineering" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Cybersecurity Learning Module" />
+    <meta property="twitter:description" content="Interactive cybersecurity training covering threats, hygiene, and social engineering" />
+    
+    <!-- Tailwind CSS CDN for styling support -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Favicon and app icons -->
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <title>Cybersecurity Learning Module</title>
+    
+    <style>
+      /* Loading spinner styles */
+      .loading-spinner {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border: 3px solid #f3f3f3;
+        border-top: 3px solid #3498db;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+      
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      
+      .loading-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+        background-color: #f8f9fa;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <div style="text-align: center; padding: 50px; font-family: Arial, sans-serif;">
+        <h1>JavaScript Required</h1>
+        <p>You need to enable JavaScript to run this cybersecurity learning application.</p>
+        <p>Please enable JavaScript in your browser settings and refresh the page.</p>
+      </div>
+    </noscript>
+    
+    <!-- Loading fallback -->
+    <div id="loading" class="loading-container">
+      <div class="loading-spinner"></div>
+      <p style="margin-top: 20px; color: #666; font-family: Arial, sans-serif;">
+        Loading Cybersecurity Learning Module...
+      </p>
+    </div>
+    
+    <!-- React app will mount here -->
+    <div id="root"></div>
+    
+    <script>
+      // Hide loading spinner once React app loads
+      window.addEventListener('load', function() {
+        const loading = document.getElementById('loading');
+        if (loading) {
+          loading.style.display = 'none';
+        }
+      });
+    </script>
+  </body>
+</html>
