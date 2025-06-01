@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="shieldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="innerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#60a5fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="512" height="512" rx="64" fill="url(#shieldGradient)"/>
+  
+  <!-- Main shield -->
+  <path d="M256 64L128 128v96c0 80 56 152 128 176 72-24 128-96 128-176v-96l-128-64z" 
+        fill="white" stroke="white" stroke-width="8"/>
+  
+  <!-- Inner shield with gradient -->
+  <path d="M256 96L160 144v80c0 64 44.8 121.6 96 144 51.2-22.4 96-80 96-144v-80l-96-48z" 
+        fill="url(#innerGradient)"/>
+  
+  <!-- Large checkmark -->
+  <path d="M208 256l32 32 64-64" stroke="white" stroke-width="16" 
+        stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  
+  <!-- Lock symbol -->
+  <rect x="224" y="352" width="64" height="48" rx="4" fill="white"/>
+  <path d="M232 352v-16c0-8 6.5-14.5 14.5-14.5h19c8 0 14.5 6.5 14.5 14.5v16" 
+        stroke="white" stroke-width="6" fill="none"/>
+  <circle cx="256" cy="372" r="4" fill="url(#innerGradient)"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="96" cy="96" r="4" fill="rgba(255,255,255,0.4)"/>
+  <circle cx="416" cy="96" r="4" fill="rgba(255,255,255,0.4)"/>
+  <circle cx="96" cy="416" r="4" fill="rgba(255,255,255,0.4)"/>
+  <circle cx="416" cy="416" r="4" fill="rgba(255,255,255,0.4)"/>
+  
+  <!-- Binary pattern -->
+  <text x="80" y="450" fill="rgba(255,255,255,0.2)" font-family="monospace" font-size="16">1010101010</text>
+  <text x="320" y="450" fill="rgba(255,255,255,0.2)" font-family="monospace" font-size="16">1101101011</text>
+  <text x="80" y="480" fill="rgba(255,255,255,0.2)" font-family="monospace" font-size="16">0110110101</text>
+  <text x="320" y="480" fill="rgba(255,255,255,0.2)" font-family="monospace" font-size="16">1011010110</text>
+  
+  <!-- Security badge -->
+  <circle cx="400" cy="150" r="24" fill="rgba(255,255,255,0.9)"/>
+  <path d="M400 135l-8 4v6c0 5 3.5 9.5 8 11 4.5-1.5 8-6 8-11v-6l-8-4z" 
+        fill="url(#innerGradient)"/>
+</svg>
